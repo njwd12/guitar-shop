@@ -1,0 +1,57 @@
+/* src/components/GuitarCard.css */
+.guitar-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    background-color: var(--white);
+  }
+  
+  .guitar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .guitar-image-container {
+    height: 200px;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .guitar-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .guitar-info {
+    padding: 15px;
+  }
+  
+  .guitar-name {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .guitar-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .guitar-price {
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  .guitar-type {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    background-color: var(--light-gray);
+    padding: 3px 8px;
+    border-radius: 10px;
+  }

@@ -1,0 +1,39 @@
+/* src/components/MusicianCard.css */
+.musician-card {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    flex-shrink: 0;
+  }
+  
+  .musician-image-container {
+    height: 180px;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .musician-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .musician-info {
+    padding: 15px;
+  }
+  
+  .musician-name {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .musician-bands {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+  }
